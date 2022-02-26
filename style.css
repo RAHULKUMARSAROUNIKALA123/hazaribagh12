@@ -1,0 +1,124 @@
+*{
+  padding:0px;
+  margin:0px;
+  font-family:sans-serif;
+}
+.header{
+  height:100vh;
+  width:100%;
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('background.webp');
+  background-position:center;
+  background-size:cover;
+  color:white;
+  overflow-x: hidden;
+  position:relative;
+
+}
+nav{
+  display:flex;
+  padding:20px 10px;
+  align-items:center;
+}
+nav img{
+  width:150px;
+}
+nav ul{
+  text-align:right;
+  display:inline;
+  list-style:none;
+  flex:1;
+}
+nav ul li{
+  display:inline-block;
+  margin:0 20px;
+}
+nav ul li a{
+  text-decoration:none;
+   color:white;
+}
+.main-text button{
+  width:110px;
+  height:30px;
+  font-size:20px;
+  border:3px groove blue;
+  background:transparent;
+  color:red;
+  font-family:monospace;
+  border-radius:5px;
+}
+.main-text button:focus{
+  width:125px;
+  transition:0.2s linear;
+  color:grey;
+  font-weight:bold;
+ 
+}
+
+
+
+
+.main-text{
+  margin:10% auto;
+  text-align:center;
+}
+.main-text h1{
+  font-size:50px;
+}
+.main-text .button{
+  text-decoration:none;
+  display:block;
+  width:140px;
+  height:35px;
+  margin:25px auto;
+  color:white;
+  line-height:35px;
+  border:1px solid white;
+}
+.main-text .button:hover{
+  background:white;
+  color:#000;
+  transition:0.5s;
+}
+.bottom-img{
+  height:150px;
+  position: absolute;
+  bottom:0px;
+  opacity:0.2;
+  animation:animate 8s linear infinite;
+
+}
+@keyframes animate{
+  0%{left:0;}
+  100%{left:-1900px;}
+}
+span{
+  margin:0 20px;
+  font-size:28px;
+   cursor:pointer;
+   float:right;
+   display:none;
+}
+@media only screen and (max-width:700px){
+  nav ul li{
+    display:block;
+    margin:1px 6px;
+    padding:5px 2px;
+
+
+    position:relative;
+    top:4px;
+
+
+  }
+  nav ul li a{
+    color:blue;
+  }
+  .header .img1{
+    margin:auto auto;
+  }
+
+
+
+
+
+}
